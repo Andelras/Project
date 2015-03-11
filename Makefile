@@ -1,7 +1,7 @@
 AutomatedMakefile = am
 CC = g++
 
-FILES = Driver.o Random.o
+FILES = Driver.o Random.o DiceRoll.o
 EXECUTABLE = DnDToolKit.exe
 
 PROJECT_PATH = $(PROJECT_DIR)
@@ -20,5 +20,5 @@ Project: 			$(FILES)
 Driver.o:			Driver.cpp Random.h
 			$(COMPILE) Driver.cpp
 
-
-
+DiceRoll.o:			DiceRoll.cpp DiceRoll.h
+			$(COMPILE) DiceRoll.cpp
